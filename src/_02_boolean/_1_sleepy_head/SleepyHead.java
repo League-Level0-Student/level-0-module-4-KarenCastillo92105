@@ -20,8 +20,21 @@ public class SleepyHead {
 		else if(myWeekend.equalsIgnoreCase("Sunday")){
 			isWeekend=true;
 		}
+		else {
+			isWeekend=false;
+			
+			
+		}
 		// If it is the weekend, tell the userthey get to sleep in.
+		if(isWeekend) {
+			JOptionPane.showMessageDialog(null,"You got your sleep in!");
 		
+		}
+		else {
+			
+		
+		JOptionPane.showMessageDialog(null,"Go to school!");
+		}
 		// If it is not the weekend, tell them to get out of bed and go to school!
 		
 		
@@ -29,13 +42,30 @@ public class SleepyHead {
 
 		boolean passedExam;
 		// Write code to ask the user what percentage they scored in their last exam
-
+		//GENERAL FORM FOR VARIABLE DECLARATION:
+		//Data Type variableName = whatever data we want to set it to
+		
+		String myExam=JOptionPane.showInputDialog(null,"What percentage did you score on your last exam?");
 		
 		// If they scored more than 70, they passed the exam.
+		double myDouble=Double.parseDouble(myExam);
+		if(myDouble>70) {
+			passedExam = true;
+		
+		} 
+		else { 
+		passedExam=false;
+		}
 		// Set the boolean passedExam based on their score.
 		
 		// If the user passed the exam, congratulate them
-		
+		if(passedExam) {
+		JOptionPane.showMessageDialog(null, "Congrats you passed");	
+		} 
+		else { 
+			JOptionPane.showMessageDialog(null, "Better luck next time!");	
+		}
+                            
 		// otherwise, wish them better luck next time.
 		
 		
@@ -53,7 +83,7 @@ public class SleepyHead {
 
 		}
 		// Tell the user "game is over" 
-		
+		if(gameIsOver) { JOptionPane.showInputDialog(null,"The game is over!");
 		
 		/***********************   RED SQUARE  ********************/
 		

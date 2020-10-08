@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 public class TestScores {
 	public static void main(String[] args) {
-		String myScores=JOptionPane.	showInputDialog(null, "What is you test score?");	
+		String myScores=JOptionPane.	showInputDialog(null, "What is your test score?");	
 		double myDouble=Double.parseDouble(myScores);
 		//  LOWEST < BIGGEST
 		// BIGGEST > LOWEST
